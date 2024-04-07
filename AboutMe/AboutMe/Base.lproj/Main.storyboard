@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gGw-qX-h5o">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sobre mí-->
+        <scene sceneID="Snv-5w-OUb">
+            <objects>
+                <viewController title="Sobre mí" id="c57-xq-9Dc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="orv-qI-9UE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIt-vf-GGn">
+                                <rect key="frame" x="131.66666666666666" y="139" width="129.99999999999997" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Sobre mí">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Sam" translatesAutoresizingMaskIntoConstraints="NO" id="g0t-EL-0NX">
+                                <rect key="frame" x="76.666666666666686" y="448" width="240.00000000000006" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="CQ1-Z1-s7k"/>
+                                    <constraint firstAttribute="width" constant="240" id="W9u-WZ-5zQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e90-FL-3QS">
+                                <rect key="frame" x="58" y="193" width="277" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="312" id="lCH-uK-nER"/>
+                                </constraints>
+                                <string key="text">Mi nombre completo es Samantha Yohana Ramírez Moreno, soy originaria de Reynosa, Tamaulipas, tengo 20 años y estudio la universidad en el Tecmilenio Las torres en la ciudad de Monterrey.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JXd-HU-D0o"/>
+                        <color key="backgroundColor" red="0.67549580770414941" green="0.81804103175783449" blue="0.88319200338776582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g0t-EL-0NX" firstAttribute="centerX" secondItem="orv-qI-9UE" secondAttribute="centerX" id="YbL-Gz-wED"/>
+                            <constraint firstItem="JXd-HU-D0o" firstAttribute="bottom" secondItem="e90-FL-3QS" secondAttribute="bottom" constant="251" id="Yzr-MR-fyc"/>
+                            <constraint firstItem="JXd-HU-D0o" firstAttribute="bottom" secondItem="g0t-EL-0NX" secondAttribute="bottom" constant="31" id="a7J-Ie-sei"/>
+                            <constraint firstItem="e90-FL-3QS" firstAttribute="top" secondItem="kIt-vf-GGn" secondAttribute="bottom" constant="26" id="cMU-E7-xxL"/>
+                            <constraint firstItem="e90-FL-3QS" firstAttribute="leading" secondItem="JXd-HU-D0o" secondAttribute="leading" constant="58" id="em5-6a-2yf"/>
+                            <constraint firstItem="g0t-EL-0NX" firstAttribute="centerX" secondItem="e90-FL-3QS" secondAttribute="centerX" id="q5m-jc-zID"/>
+                            <constraint firstItem="g0t-EL-0NX" firstAttribute="centerX" secondItem="kIt-vf-GGn" secondAttribute="centerX" id="xDb-iR-acj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sobre mí" image="person.fill" catalog="system" id="xaE-wL-aT5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTQ-6F-cD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="4"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JMR-3u-QnF">
+            <objects>
+                <tabBarController id="gGw-qX-h5o" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WOl-8a-Mad">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="c57-xq-9Dc" kind="relationship" relationship="viewControllers" id="Bab-Bc-WkH"/>
+                        <segue destination="are-2I-Xj2" kind="relationship" relationship="viewControllers" id="bEX-Q6-2pb"/>
+                        <segue destination="dis-Um-mFw" kind="relationship" relationship="viewControllers" id="JUj-Hw-vzV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgH-Zg-PSO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-733"/>
+        </scene>
+        <!--Mis gustos-->
+        <scene sceneID="KLa-Bg-m8M">
+            <objects>
+                <viewController title="Mis gustos" id="are-2I-Xj2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCs-bV-pt4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="❀ Me gusta mucho aprender cosas nuevas, en especial idiomas." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybU-x1-pcD">
+                                <rect key="frame" x="60" y="192" width="272" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="❀ Mi cantantes favoritas son Ariana Grande y Billie Eilish. " lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J6-Fj-ZKa">
+                                <rect key="frame" x="62" y="288" width="268" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAH-BW-GGt">
+                                <rect key="frame" x="74" y="113" width="245" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lo que me gusta">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="❀ Hacer videos mostrando productos o sobre mí." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz4-do-bag">
+                                <rect key="frame" x="62" y="397" width="268" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="❀ Mi saga favorita es Harry Potter." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCG-JC-zuR">
+                                <rect key="frame" x="65" y="641" width="268" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="❀ Mi serie favorita es &quot;Breaking Bad&quot; y mi pelicula favorita es &quot;10 cosas que odio de ti&quot;." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJE-6R-LVD">
+                                <rect key="frame" x="64" y="501" width="268" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uh8-Ra-zdm"/>
+                        <color key="backgroundColor" red="0.83354509201598836" green="0.72549122160255586" blue="0.91102104580279475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mis gustos" image="heart.fill" catalog="system" id="5bV-bq-veq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljH-cc-Gku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667.9389312977098" y="3.5211267605633805"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="3LB-kC-tO1">
+            <objects>
+                <viewController title="Hobbies" id="dis-Um-mFw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tB6-ZR-Wtz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwL-tC-AE8">
+                                <rect key="frame" x="74" y="134" width="245" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Mis hobbies">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esr-sH-euT">
+                                <rect key="frame" x="49" y="211" width="295" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Normalmente lo que hago en mis tiempos libres es pasar tiempo con mi familia, amigos y novio, escucho mucha música, veo series o peliculas y además juego videojuegos. A veces me gusta experimentar en la cocina haciendo recetas nuevas de comida o postres que veo en videos. En temporada de vacaciones me gusta viajar.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="53D-YK-g30"/>
+                        <color key="backgroundColor" red="0.93786839812313261" green="0.76435904608093697" blue="0.88801857783906712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="tv" catalog="system" id="Rgk-QH-Cgp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlv-ZS-9bK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sam" width="339" height="735"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="tv" catalog="system" width="128" height="95"/>
+    </resources>
+</document>
